@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>carousel</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+    </head>
+    <body class="container">
+        <div class="carousel slide" data-bs-ride="carousel" id="content">
+            <div class="carousel-inner">
+            <!--carousel slides starts here-->
+                <div class="carousel-item">
+                    <img src="../assets/tonystark.jpg" class="w-100 d-block">
+                </div>
+                <div class="carousel-item active">
+                    <img src="../assets/WIN_20230502_09_44_00_Pro.jpg" class="w-100 d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/WIN_20230502_09_07_14_Pro.jpg" class="w-100 d-block">
+                </div>
+            </div>
+            <!--carousel controls starts here-->
+            <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#content"><span class="carousel-control-prev-icon"></span></button>
+            <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#content"><span class="carousel-control-next-icon"></span></button>
+            <!--carousel indicators starts here-->
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-slide-to="0" data-bs-target="#content"></button>
+                <button type="button" class="active" data-bs-slide-to="1" data-bs-target="#content"></button>
+                <button type="button" class="active" data-bs-slide-to="2" data-bs-target="#content"></button>
+            </div>
+            <!--carousel caption starts here-->
+            <div class="carousel-caption" data-bs-target="#content">
+                <h1 class="text-danger">MARVEL</h1>
+                <p class="text-primary">Avengers Assemble.I am Ironman</p>
+                <button type="button" class="btn btn-success rounded">JOIN</button>
+            </div>
+        </div>
+    </body>
+</html>
