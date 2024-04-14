@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task2</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+    </head>
+    <body class="container">
+        <!---NAVIGATION BAR STARTS HERE....-->
+        <ul class="nav nav-tabs bg-warning">
+            <li class="nav-item">
+                <a href="#home" class="nav-link" data-bs-toggle="tab">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#register" class="nav-link" data-bs-toggle="tab">Register</a>
+            </li>
+            <li class="nav-item">
+                <a href="#login" class="nav-link" data-bs-toggle="tab">Login</a>
+            </li>
+        </ul>
+        <!---NAVIGATION BAR ENDS HERE....-->
+        <!---TAB CONTENT STARTS HERE....-->
+        <div class="tab-content">
+            <!---HOME PAGE STARTS HERE....-->
+            <div class="tab-pane bg-primary" id="home">
+                <h1 class="text-info">This is a Home Page...</h1>
+                <p>If you are a new user to this page click on register to proceed...</p>
+                <p>If you are already an user click on Log-In to continue...</p>
+            </div>
+            <!---HOME PAGE ENDS HERE....-->
+            <!---REGISTER PAGE STARTS HERE....-->
+            <div class="tab-pane" id="register">
+                <button type="button" class="btn btn-primary m-4" data-bs-toggle="modal" data-bs-target="#mymodal">REGISTER</button>
+                <div class="modal bg-danger" id="mymodal" data-bs-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-warning">
+                            <div class="modal-header">
+                                <h1>REGISTRATION FORM</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <label class="form-label">ENTER USERNAME: </label>
+                                    <div>
+                                        <input type="text" class="form-control"/>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="form-label">ENTER PASSWORD: </label>
+                                    <div>
+                                        <input type="password" class="form-control"/>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="form-label">GENDER: </label>
+                                    <div>
+                                        <input type="radio" name="gender" class="form-check-input"><label class="form-check-label">MALE: </label>
+                                        <input type="radio" name="gender" class="form-check-input"><label class="form-check-label">FEMALE: </label>
+                                        <input type="radio" name="gender" class="form-check-input"><label class="form-check-label">OTHERS: </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="form-label">SKILLS: </label>
+                                    <div>
+                                        <input type="checkbox" class="form-check-input"><label class="form-check-label">PYTHON</label>
+                                        <input type="checkbox" class="form-check-input"><label class="form-check-label">HTML</label>
+                                        <input type="checkbox" class="form-check-input"><label class="form-check-label">CSS</label>
+                                        <input type="checkbox" class="form-check-input"><label class="form-check-label">BOOTSTRAP</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="form-label">SELECT YOUR LOCATION: </label>
+                                    <div>
+                                        <select class="form-select">
+                                            <option>choose city</option>
+                                            <option>HYDERABAD</option>
+                                            <option>BANGALORE</option>
+                                            <option>CHENNAI</option>
+                                            <option>PUNE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="form-label">UPLOAD YOUR RESUME: </label>
+                                    <div>
+                                        <input type="file" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="../assets/registrationsuccessfulimage.jpg"><button type="button" class="btn btn-success">Register</button></a>
+                                <button type="button" class="btn btn-success">Sign-in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---REGISTER PAGE ENDS HERE....-->
+            <!---LOGIN PAGE STARTS HERE....-->
+            <div class="tab-pane w-50 bg-success" id="login">
+                <div>
+                    <label class="form-label">USERNAME: </label>
+                    <div>
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div>
+                    <label class="form-label">PASSWORD: </label>
+                    <div>
+                        <input type="password" class="form-control"/>
+                    </div>
+                </div>
+                <div class="text-end m-4">
+                    <button type="button" class="btn btn-primary">Log-In</button>
+                    <button type="button" class="btn btn-primary">Sign-Up</button>
+                </div>
+            </div>
+            <!---LOGIN PAGE ENDS HERE....-->
+        </div>
+        <!---TAB CONTENT ENDS HERE....-->
+    </body>
+</html>
